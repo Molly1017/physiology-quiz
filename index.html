@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f4f7fb">
+    <title>生理学基础测验</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="quiz-shell">
+      <header class="quiz-header">
+        <p class="eyebrow">临床医学基础</p>
+        <h1>生理学基础测验</h1>
+        <p class="intro">5 道单选题，检验你对心脏泵血、血压和呼吸生理的理解。</p>
+        <div class="progress-wrap" aria-label="答题进度">
+          <div class="progress-bar"><span id="progress-fill"></span></div>
+          <span id="progress-text">第 1 / 5 题</span>
+        </div>
+      </header>
+
+      <section id="quiz-card" class="quiz-card" aria-live="polite">
+        <p id="question-number" class="question-number">第 1 题</p>
+        <h2 id="question-text"></h2>
+        <div id="options" class="options" role="group" aria-label="答案选项"></div>
+        <div id="feedback" class="feedback" hidden>
+          <p id="feedback-result" class="feedback-result"></p>
+          <p id="feedback-explanation"></p>
+          <button id="next-button" class="primary-button" type="button">下一题</button>
+        </div>
+      </section>
+
+      <section id="result-card" class="result-card" hidden>
+        <p class="eyebrow">测验完成</p>
+        <h2>你的总分</h2>
+        <p id="score" class="score"></p>
+        <p id="score-message" class="score-message"></p>
+        <button id="restart-button" class="primary-button" type="button">再做一次</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
